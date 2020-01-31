@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { Constants } from 'shared';
 
 @Component({
-  selector: 'lib-business',
+  // This version here works!
+  // selector: BusinessComponent.Selector,
+
+  // This does not work for some reason :(
+  selector: Constants.BusinessSelector,
   template: `
     <p>
       business works!
@@ -10,6 +15,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class BusinessComponent implements OnInit {
+  public static readonly Selector = 'lib-business';
 
   constructor() { }
 

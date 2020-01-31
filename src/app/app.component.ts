@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { Constants } from 'shared';
 
 @Component({
-  selector: 'app-root',
+  selector: Constants.AppSelector,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

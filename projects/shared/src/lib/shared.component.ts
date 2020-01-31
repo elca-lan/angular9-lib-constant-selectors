@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Constants } from './constants';
 
 @Component({
-  selector: 'lib-shared',
+  selector: Constants.SharedSelector,
   template: `
     <p>
       shared works!
